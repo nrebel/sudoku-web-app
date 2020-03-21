@@ -17,3 +17,5 @@ Then you can open your browser and open http://127.0.0.1:5000/sudoku
 Requirements:
 - PuLP
 - Flask
+
+For the html rendering bootstrap is used inside the templates.
