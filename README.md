@@ -9,12 +9,12 @@ lpsolve solver provided by the PuLP module.
 To run the web app locally, you need to call
 
 ```bash
-python3 app.py
+$ python3 app.py
+```
 
+Then you can open your browser and go to http://127.0.0.1:5000/sudoku
 
-Then you can open your browser and open http://127.0.0.1:5000/sudoku
-
-Requirements:
+**Requirements**:
 - PuLP
 - Flask
 
