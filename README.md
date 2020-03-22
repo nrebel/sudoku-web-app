@@ -4,7 +4,7 @@ Small Python web app to solve Sudokus using PuLP and Flask
 This is a very basic and simple example for a Python web app, that solves a Sudoku, which is entered by the user.
 The principle is as follows: 
 with the numbers entered for the sudoku via the web interface a linear program is generated, that gets solved in the background using the
-lpsolve solver provided by the PuLP module.
+standard LP solver provided by the PuLP module (you can also activate your preferred solver like Gurobi etc. if you hold a license).
 
 To run the web app locally, you need to call
 
