@@ -5,9 +5,8 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 
 @app.route('/')
-def index():
-    return render_template('index.html')
-
+# def index():
+#    return render_template('index.html')
 @app.route('/sudoku', methods=["GET", "POST"])
 def sudoku():
   # A list for indexing
@@ -54,7 +53,7 @@ def testvals():
         fieldString += "<td><input type=\"number\" value=\"" + erg[i][j] + " \" name=\"cell_" + str(i) + str(j) + "\">" + erg[i][j] + "</td>\n"
     fieldString += "\n</tr>"
     print (fieldString)
-  return render_template('sudoku.html', fields=fieldString)
+  return render_template('sudoku_res.html', fields=fieldString)
 
 if __name__ == "__main__":
-	app.run() 
+  app.run(host='0.0.0.0', port=5000)
