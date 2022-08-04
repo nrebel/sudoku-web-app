@@ -4,9 +4,15 @@ from sudoku import solve_sudoku
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
+<<<<<<< HEAD
 @app.route('/')
 # def index():
 #    return render_template('index.html')
+=======
+PORT = 5000
+
+@app.route('/')
+>>>>>>> 3ffdf7d3e74c51cb0b22b398b786bc710e8713bc
 @app.route('/sudoku', methods=["GET", "POST"])
 def sudoku():
   # A list for indexing
@@ -56,4 +62,8 @@ def testvals():
   return render_template('sudoku_res.html', fields=fieldString)
 
 if __name__ == "__main__":
+<<<<<<< HEAD
   app.run(host='0.0.0.0', port=5000)
+=======
+	app.run(host='0.0.0.0', port=PORT)
+>>>>>>> 3ffdf7d3e74c51cb0b22b398b786bc710e8713bc
