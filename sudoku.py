@@ -37,7 +37,7 @@ def solve_sudoku(input_form):
     for i in rows:
         for j in columns:
             cell = "cell_" + i + j
-            if input_form[cell] != "":
+            if input_form[cell] not in ("", 0):
                 val = input_form[cell]
                 model += choices[str(val)][i][j] == 1,"" # for flask version str(...) might be removed
 
