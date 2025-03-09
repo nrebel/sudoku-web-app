@@ -39,7 +39,7 @@ def solve_sudoku(input_form):
             cell = "cell_" + i + j
             if input_form[cell] != "":
                 val = input_form[cell]
-                model += choices[val][i][j] == 1,""
+                model += choices[str(val)][i][j] == 1,"" # for flask version str(...) might be removed
 
     # just for analysis, we write out the model into an .lp-file
     model.writeLP("sudoku_model.lp")
